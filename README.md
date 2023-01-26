@@ -38,13 +38,16 @@ Replace the *3.9* or *39* above with whatever version of Python you want to use 
 
 ## Installation
 
-Atom has built-in support for snippets. The snippets are stored in a single CSON file by programming language.
-
 1. Install the snippets for Atom.
 
-From the above folder vscpymolsnips, download and move the file python.json on the macOS to `~/Library/Application\ Support/Code/User/snippets/python.json` ; on Windows to `$HOME/APPDATA\Roaming\Code\User\snippets\python.json`; on Linux to `$HOME/.config/Code/User/snippets/python.json`.
+You will need the **snippets** package to be able to use the cctbx snippets in Atom. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must make sure that the **snippets** package is enabled (green bar along the button). 
 
-2. **Optional** If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText extension for VSC](https://marketplace.visualstudio.com/items?itemName=tokoph.ghosttext). Open the command platte (Option-X on macOS) in VSC and enter "Enable GhostText".
+The snippets for all programming languages are stored in a single file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
+You can concatenate the file of cctbx snippets for Atom to your existing snippets.cson file.
+To do this, Mac users enter: `cp -a ~/cctbxsnips-Atom/snippets.cson ~/.atom/snippets.cson`. 
+
+2. **Optional** If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText extension for Atom](https://github.com/GhostText/GhostText-for-Atom). 
+The GhostText extension for Atom can be installed with Atom's command-line package manager (apm):  `apm i GhostText/GhostText-for-Atom`
 
 ## Related repositories
 
