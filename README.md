@@ -33,21 +33,21 @@ Replace the *3.9* or *39* above with whatever version of Python you want to use 
 
 1. **Facilitation of code reuse**. The use of code snippets can save time by reusing existing code. The presence of tab stops in code snippets can help ensure that all parameters that need customization to a new problem are considered. Thus, tab stops can reduce subsequent debugging.
 
-2. **Use of Atom to edit Jupyter and Colab code and markdown cells** The existnig snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops: These are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to Atom via the GhostText extension for the browser.
+2. **Use of Atom to edit Jupyter and Colab code and markdown cells** The existing snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops: These are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to Atom via the GhostText extension for the browser.
 
 
-## Installation
+## Installation of the snippets
 
 1. Install the snippets for Atom.
 
 You will need the **snippets** package to be able to use the cctbx snippets in Atom. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must make sure that the **snippets** package is enabled (green bar along the button). 
 
-The snippets for all programming languages are stored in a single file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
+The snippets for all programming languages are stored in a single coffeescript file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
 You can concatenate the file of cctbx snippets for Atom to your existing snippets.cson file.
 To do this, Mac users enter: `cp -a ~/cctbxsnips-Atom/cctbxsnippets.cson ~/.atom/snippets.cson`. 
 
-2. **Optional** If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText extension for Atom](https://github.com/GhostText/GhostText-for-Atom). 
-The GhostText extension for Atom can be installed with Atom's command-line package manager (apm):  `apm i GhostText/GhostText-for-Atom`
+2. **Optional** If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText package for Atom](https://github.com/GhostText/GhostText-for-Atom). 
+The GhostText package for Atom can be installed with Atom's command-line package manager (apm) by running the following command in your terminal:  `apm i GhostText/GhostText-for-Atom`
 
 ## Related repositories
 
