@@ -44,7 +44,7 @@ You will need the **snippets** package to be able to use the cctbx snippets in A
 
 The snippets for all programming languages are stored in a single file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
 You can concatenate the file of cctbx snippets for Atom to your existing snippets.cson file.
-To do this, Mac users enter: `cp -a ~/cctbxsnips-Atom/snippets.cson ~/.atom/snippets.cson`. 
+To do this, Mac users enter: `cp -a ~/cctbxsnips-Atom/cctbxsnippets.cson ~/.atom/snippets.cson`. 
 
 2. **Optional** If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText extension for Atom](https://github.com/GhostText/GhostText-for-Atom). 
 The GhostText extension for Atom can be installed with Atom's command-line package manager (apm):  `apm i GhostText/GhostText-for-Atom`
