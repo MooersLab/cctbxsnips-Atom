@@ -46,7 +46,9 @@ The snippets for all programming languages are stored in a single coffeescript f
 You can concatenate the file of cctbx snippets for Atom to your existing snippets.cson file.
 To do this, Mac users enter: `cp -a ~/cctbxsnips-Atom/cctbxsnippets.cson ~/.atom/snippets.cson`. 
 
-2. **Optional** If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText package for Atom](https://github.com/GhostText/GhostText-for-Atom). 
+2. **Optional setup to edit live Jupyter and Colab cells** 
+
+If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText package for Atom](https://github.com/GhostText/GhostText-for-Atom). 
 The GhostText package for Atom can be installed with Atom's command-line package manager (apm) by running the following command in your terminal:  `apm i GhostText/GhostText-for-Atom`
 
 ## Related repositories
