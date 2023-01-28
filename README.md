@@ -38,7 +38,7 @@ Replace the *3.9* or *39* above with whatever version of Python you want to use 
 
 ## Installation of the snippets
 
-1. Install the snippets for Atom.
+**1. Install the snippets for Atom.**
 
 You will need the **snippets** package to be able to use the cctbx snippets in Atom. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must make sure that the **snippets** package is enabled (green bar along the button). 
 
@@ -46,7 +46,7 @@ The snippets for all programming languages are stored in a single coffeescript f
 You can concatenate the file of cctbx snippets for Atom to your existing snippets.cson file.
 To do this, Mac users enter: `cp -a ~/cctbxsnips-Atom/cctbxsnippets.cson ~/.atom/snippets.cson`. 
 
-2. **Optional setup to edit live Jupyter and Colab cells** 
+**2. Optional setup to edit live Jupyter and Colab cells.** 
 
 If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText package for Atom](https://github.com/GhostText/GhostText-for-Atom). 
 The GhostText package for Atom can be installed with Atom's command-line package manager (apm) by running the following command in your terminal:  `apm i GhostText/GhostText-for-Atom`
