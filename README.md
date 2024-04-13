@@ -50,7 +50,8 @@ Replace the *3.9* or *39* above with whatever version of Python you want to use 
 
 1. ** Facilitation of code reuse **. Code snippets can save time by reusing existing code. The presence of tab stops in code snippets can help ensure that all parameters that need customization to a new problem are considered. Thus, tab stops can reduce subsequent debugging.
 
-2. **Use Atom to edit Jupyter and Colab code and markdown cells** The existing snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops, which are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to Atom via the GhostText extension for the browser.
+2. **Use Atom to edit Jupyter and Colab code and markdown cells** The existing snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops, which are standard features of code snippet systems in most text editors.
+We can overcome these limitations by sending the active code cell to Atom via the browser's GhostText extension.
 
 
 ## Installation of the snippets
