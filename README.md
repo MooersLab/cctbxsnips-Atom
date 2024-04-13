@@ -84,9 +84,9 @@ The GhostText package for Atom can be installed with Atom's command-line package
 
 ## Update History
 
-|Version      | Changes                                                                                                                                    | Date            |
-|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:---------------:|
-| Version 0.2 |  Added badges and update table                                                                                                             | 2024 April 13    |
+|Version      | Changes                                                                                                                                    | Date                 |
+|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
+| Version 0.2 |  Added badges and update table                                                                                                             | 2024 April 13        |
 
 
 ## Sources of funding
