@@ -1,4 +1,4 @@
-# cctbxsnips for the Atom text editor
+# cctbxsnips for the Atom (and Pulsar) text editors
 
 ![Version](https://img.shields.io/static/v1?label=cctbxsnips-Atoma&message=0.1&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -9,6 +9,8 @@
 This text editor is favored by many, but its development has been halted.
 It has been replaced by [Pulsar](https://pulsar-edit.dev/).
 Nonetheless, some diehards will continue to use Atom for many years.
+Pulsar uses the same format for the snippets.
+They are stored in  `~/.pulsar/snippets.cson`
 
 
 ## CCTBX
@@ -17,13 +19,17 @@ Nonetheless, some diehards will continue to use Atom for many years.
 Its development is based at Lawrence-Berkeley National Laboratory.
 It provides code for computations with diffraction data and atomic coordinates of proteins and small molecules.
 It has C++ and Python ports.
-It is available in Anaconda in the conda-forge channel as `cctbx-bas`e for python3.8 through 3.11 for Windows, macOS, and Linux.
+It is available in Anaconda in the conda-forge channel as `cctbx-base` for python3.8 through 3.11 for Windows, macOS, and Linux.
 
 ### Blaine's cctbx install protocol
 
-I assume that Anaconda has already been installed. We will create a conda env specifically for CCTBX. CCTBX has numerous dependencies. It is best kept in an isolated environment. We also create the corresponding Jupyter Notebook kernel while we are at it. 
+I assume that Anaconda has already been installed. 
+We will create a conda env specifically for CCTBX. 
+CCTBX has numerous dependencies. I
+t is best kept in an isolated environment. 
+We also make the corresponding Jupyter Notebook kernel while we are at it. 
 
-Execute one line at a time: Wait for the execution to finish before executing the next line.
+Execute one line at a time: Wait for the execution to finish before executing the following line.
 
 ```bash
 conda create --name cctbx39 python=3.9
@@ -51,7 +57,9 @@ Replace the *3.9* or *39* above with whatever version of Python you want to use 
 
 **1. Install the snippets for Atom.**
 
-You will need the **snippets** package to be able to use the cctbx snippets in Atom. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must ensure the **snippets** package is enabled (green bar along the button). 
+You will need the **snippets** package to use the cctbx snippets in Atom. 
+The package installer is very intuitive. 
+Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must ensure the **snippets** package is enabled (green bar along the button). 
 
 The snippets for all programming languages are stored in a single CoffeeScript file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
 You can concatenate the file of cctbx snippets for Atom to your existing snippets.cson file.
