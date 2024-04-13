@@ -1,7 +1,7 @@
 # cctbxsnips for the Atom text editor
 
 ## Atom
-This text editor is the favored by many but its development has been halted.
+This text editor is favored by many, but its development has been halted.
 It has been replaced by [Pulsar](https://pulsar-edit.dev/).
 
 
