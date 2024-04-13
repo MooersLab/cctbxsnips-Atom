@@ -1,8 +1,14 @@
 # cctbxsnips for the Atom text editor
 
+![Version](https://img.shields.io/static/v1?label=cctbxsnips-Atoma&message=0.1&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
+
 ## Atom
 This text editor is favored by many, but its development has been halted.
 It has been replaced by [Pulsar](https://pulsar-edit.dev/).
+Nonetheless, some diehards will continue to use Atom for many years.
 
 
 ## CCTBX
