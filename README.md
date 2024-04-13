@@ -1,16 +1,21 @@
 # cctbxsnips for the Atom text editor
 
+## Atom
+This text editor is the favored by many but its development has been halted.
+It has been replaced by [Pulsar](https://pulsar-edit.dev/).
+
+
 ## CCTBX
 
 [CCTBX](https://github.com/cctbx/cctbx_project) is the Computational Crystallography Toolbox. 
 Its development is based at Lawrence-Berkeley National Laboratory.
 It provides code for computations with diffraction data and atomic coordinates of proteins and small molecules.
 It has C++ and Python ports.
-It is available in Anaconda in the conda-forge channel as cctbx-base for python3.8 through 3.11 for Windows, macOS, and Linux.
+It is available in Anaconda in the conda-forge channel as `cctbx-bas`e for python3.8 through 3.11 for Windows, macOS, and Linux.
 
 ### Blaine's cctbx install protocol
 
-I assume that Anaconda has already been installed. We will create a conda env specifically for CCTBX. CCTBX has numerous dependencies. It is best kept in an isolated env. We also create the correpsonding Jupyter notebook kernel while we are at it. 
+I assume that Anaconda has already been installed. We will create a conda env specifically for CCTBX. CCTBX has numerous dependencies. It is best kept in an isolated environment. We also create the corresponding Jupyter Notebook kernel while we are at it. 
 
 Execute one line at a time: Wait for the execution to finish before executing the next line.
 
@@ -31,18 +36,18 @@ Replace the *3.9* or *39* above with whatever version of Python you want to use 
 
 ## The problems that this repo addresses
 
-1. **Facilitation of code reuse**. The use of code snippets can save time by reusing existing code. The presence of tab stops in code snippets can help ensure that all parameters that need customization to a new problem are considered. Thus, tab stops can reduce subsequent debugging.
+1. ** Facilitation of code reuse **. Code snippets can save time by reusing existing code. The presence of tab stops in code snippets can help ensure that all parameters that need customization to a new problem are considered. Thus, tab stops can reduce subsequent debugging.
 
-2. **Use of Atom to edit Jupyter and Colab code and markdown cells** The existing snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops: These are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to Atom via the GhostText extension for the browser.
+2. **Use Atom to edit Jupyter and Colab code and markdown cells** The existing snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops, which are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to Atom via the GhostText extension for the browser.
 
 
 ## Installation of the snippets
 
 **1. Install the snippets for Atom.**
 
-You will need the **snippets** package to be able to use the cctbx snippets in Atom. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must make sure that the **snippets** package is enabled (green bar along the button). 
+You will need the **snippets** package to be able to use the cctbx snippets in Atom. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must ensure the **snippets** package is enabled (green bar along the button). 
 
-The snippets for all programming languages are stored in a single coffeescript file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
+The snippets for all programming languages are stored in a single CoffeeScript file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
 You can concatenate the file of cctbx snippets for Atom to your existing snippets.cson file.
 To do this, Mac users enter: `cp -a ~/cctbxsnips-Atom/cctbxsnippets.cson ~/.atom/snippets.cson`. 
 
